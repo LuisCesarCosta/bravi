@@ -25,10 +25,10 @@ public class ContactStore {
 	
 	private static void initOneContact() {
 		Address[] addrs = {
-			new Address("Shanghai", "Long Hua Street"),
+			new Address("Rio de Janeiro", "Carlos de Vasconselos"),
 			new Address("Shanghai", "Dong Quan Street")
 		};
-		Contact cHuang = new Contact("huangyim", "Huang Yi Ming", Arrays.asList(addrs));
+		Contact cHuang = new Contact("luis", "Tijuca", Arrays.asList(addrs));
 		store.put(cHuang.getId(), cHuang);
 	}
 }

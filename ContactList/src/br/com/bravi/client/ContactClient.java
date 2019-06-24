@@ -19,10 +19,10 @@ public class ContactClient {
 	
 	public static void main(String[] args) {
 		Client c = Client.create();
-		WebResource r = c.resource("http://localhost:8080/Jersey/rest/contacts");
+		WebResource r = c.resource("http://localhost:8080/bravi/rest/contacts");
 		
-		System.out.println("===== Get huangyim =====");
-		getOneContact(r, "huangyim");
+		System.out.println("===== Get luis =====");
+		getOneContact(r, "luis");
 		
 		System.out.println("===== Create foo =====");
 		postForm(r, "foo", "bar");
@@ -30,9 +30,9 @@ public class ContactClient {
 		Address[] addrs = {
 			new Address("Shanghai", "Ke Yuan Street")
 		};
-		Contact cnt = new Contact("guoqing", "Guo Qing", Arrays.asList(addrs));
+		Contact cnt = new Contact("marcela", "Tijuca", Arrays.asList(addrs));
 		
-		System.out.println("===== Create guoqing =====");
+		System.out.println("===== Create marcela =====");
 		putOneContact(r, cnt);
 		
 		System.out.println("===== All Contacts =====");
